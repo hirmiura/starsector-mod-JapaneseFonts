@@ -1,0 +1,9 @@
+{
+    "masterVersionFile": "https://raw.githubusercontent.com/hirmiura/starsector-mod-JapaneseFonts/main/mod/JapaneseFonts.version",
+    "modName": "zja Japanese Fonts",
+    "modVersion": {
+        "major": 0,
+        "minor": 1,
+        "patch": 0
+    }
+}
