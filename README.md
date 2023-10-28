@@ -32,7 +32,7 @@ Windows環境を前提としています。Wine等で動くかは試していな
 
 - [starsector-mod-Font_Replacement_for_Orbitron](https://github.com/hirmiura/starsector-mod-Font_Replacement_for_Orbitron)
 - [starsector-mod-Font_Replacement_for_Insignia](https://github.com/hirmiura/starsector-mod-Font_Replacement_for_Insignia)
-- [starsector-mod-Japanese_Translation](https://github.com/hirmiura/starsector-mod-Japanese_Translation)
+- [starsector-mod-JapaneseTranslation](https://github.com/hirmiura/starsector-mod-JapaneseTranslation)
 - [starsector-mod-Font_Sika](https://github.com/hirmiura/starsector-mod-Font_Sika)
 - [bfg_scripts](https://github.com/hirmiura/bfg_scripts)
 
