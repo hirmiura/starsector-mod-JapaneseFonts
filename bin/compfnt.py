@@ -101,6 +101,15 @@ def process(args: argparse.Namespace) -> None:
                 params[gn_common] = mat_common.group(gn_common)
             params_list.append(params)
 
+    output(params_list)
+
+
+def output(params_list: list) -> None:
+    """結果を出力する
+
+    Args:
+        params_list (list): パラメータのリスト
+    """
     # ヘッダを出力する
     len4loop = len(params_list[0]) - 1
     for i, gn in enumerate(params_list[0].keys()):
