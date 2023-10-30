@@ -2,57 +2,9 @@
     // 全体に反映するテンプレート
     "template": "bmfc_template.txt",
     "config": [
-        // Orbitron
-        {
-            "outputfile": "BIZUDPGothic12cond",
-            "fontFile": "fonts/BIZUDPGothic-Regular.otf",
-            "fontSize": -12,
-            "aa": 4,
-            "outWidth": 2048,
-            "outHeight": 2048
-        },
-        {
-            "outputfile": "BIZUDPGothic20aa",
-            "fontFile": "fonts/BIZUDPGothic-Regular.otf",
-            "fontSize": 20,
-            "aa": 4,
-            "outWidth": 4096,
-            "outHeight": 2048
-        },
-        {
-            "outputfile": "BIZUDPGothic20aab",
-            "fontFile": "fonts/BIZUDPGothic-Bold.otf",
-            "fontSize": 20,
-            "aa": 4,
-            "outWidth": 4096,
-            "outHeight": 2048
-        },
-        {
-            "outputfile": "BIZUDPGothic20b",
-            "fontFile": "fonts/BIZUDPGothic-Bold.otf",
-            "fontSize": 20,
-            "aa": 4,
-            "outWidth": 4096,
-            "outHeight": 2048
-        },
-        {
-            "outputfile": "BIZUDPGothic24aa",
-            "fontFile": "fonts/BIZUDPGothic-Regular.otf",
-            "fontSize": 24,
-            "aa": 4,
-            "outWidth": 4096,
-            "outHeight": 2048
-        },
-        {
-            "outputfile": "BIZUDPGothic24aab",
-            "fontFile": "fonts/BIZUDPGothic-Bold.otf",
-            "fontSize": 24,
-            "aa": 4,
-            "outWidth": 4096,
-            "outHeight": 2048
-        },
         // Insignia
         {
+            // insignia15LTaa.fnt
             "outputfile": "BIZUDPGothic15aa",
             "fontFile": "fonts/BIZUDPGothic-Regular.otf",
             "fontSize": -15,
@@ -61,6 +13,7 @@
             "outHeight": 2048
         },
         {
+            // insignia21LTaa.fnt
             "outputfile": "BIZUDPGothic21aa",
             "fontFile": "fonts/BIZUDPGothic-Regular.otf",
             "fontSize": -21,
@@ -69,12 +22,68 @@
             "outHeight": 4096
         },
         {
+            // insignia25LTaa.fnt
             "outputfile": "BIZUDPGothic25aa",
             "fontFile": "fonts/BIZUDPGothic-Regular.otf",
             "fontSize": -25,
             "aa": 4,
             "outWidth": 4096,
             "outHeight": 4096
+        },
+        // Orbitron
+        {
+            // orbitron12condensed.fnt
+            "outputfile": "BIZUDPGothic12cond",
+            "fontFile": "fonts/BIZUDPGothic-Regular.otf",
+            "fontSize": -12,
+            "aa": 4,
+            "outWidth": 2048,
+            "outHeight": 2048
+        },
+        {
+            // orbitron20aa.fnt
+            "outputfile": "BIZUDPGothic20aa",
+            "fontFile": "fonts/BIZUDPGothic-Regular.otf",
+            "fontSize": 20,
+            "aa": 4,
+            "outWidth": 4096,
+            "outHeight": 2048
+        },
+        {
+            // orbitron20aabold.fnt
+            "outputfile": "BIZUDPGothic20aab",
+            "fontFile": "fonts/BIZUDPGothic-Bold.otf",
+            "fontSize": 20,
+            "aa": 4,
+            "outWidth": 4096,
+            "outHeight": 2048
+        },
+        {
+            // orbitron20bold.fnt
+            "outputfile": "BIZUDPGothic20b",
+            "fontFile": "fonts/BIZUDPGothic-Bold.otf",
+            "fontSize": 20,
+            "aa": 4,
+            "outWidth": 4096,
+            "outHeight": 2048
+        },
+        {
+            // orbitron24aa.fnt
+            "outputfile": "BIZUDPGothic24aa",
+            "fontFile": "fonts/BIZUDPGothic-Regular.otf",
+            "fontSize": 24,
+            "aa": 4,
+            "outWidth": 4096,
+            "outHeight": 2048
+        },
+        {
+            // orbitron24aabold.fnt
+            "outputfile": "BIZUDPGothic24aab",
+            "fontFile": "fonts/BIZUDPGothic-Bold.otf",
+            "fontSize": 24,
+            "aa": 4,
+            "outWidth": 4096,
+            "outHeight": 2048
         }
     ]
 }
