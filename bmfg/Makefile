@@ -59,15 +59,15 @@ build-fonts-para: $(FONTS)
 copy-fonts: $(FONTS) clean-mod-fonts
 	@echo -e '$(CC_BrBlue)========== copy-fonts ==========$(CC_Reset)'
 	@mkdir -p $(D_FONTSDST)
+	cp $(FONTNAME)15aa.fnt $(D_FONTSDST)/insignia15LTaa.fnt
+	cp $(FONTNAME)21aa.fnt $(D_FONTSDST)/insignia21LTaa.fnt
+	cp $(FONTNAME)25aa.fnt $(D_FONTSDST)/insignia25LTaa.fnt
 	cp $(FONTNAME)12cond.fnt $(D_FONTSDST)/orbitron12condensed.fnt
 	cp $(FONTNAME)20aa.fnt $(D_FONTSDST)/orbitron20aa.fnt
 	cp $(FONTNAME)20aab.fnt $(D_FONTSDST)/orbitron20aabold.fnt
 	cp $(FONTNAME)20b.fnt $(D_FONTSDST)/orbitron20bold.fnt
 	cp $(FONTNAME)24aa.fnt $(D_FONTSDST)/orbitron24aa.fnt
 	cp $(FONTNAME)24aab.fnt $(D_FONTSDST)/orbitron24aabold.fnt
-	cp $(FONTNAME)15aa.fnt $(D_FONTSDST)/insignia15LTaa.fnt
-	cp $(FONTNAME)21aa.fnt $(D_FONTSDST)/insignia21LTaa.fnt
-	cp $(FONTNAME)25aa.fnt $(D_FONTSDST)/insignia25LTaa.fnt
 	cp *.png $(D_FONTSDST)
 
 fixheight:
