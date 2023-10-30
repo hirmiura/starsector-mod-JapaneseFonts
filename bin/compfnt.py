@@ -49,7 +49,6 @@ GN_COMMON_LIST = [
     "greenChnl",
     "blueChnl",
 ]
-GN_LIST = GN_INFO_LIST + GN_COMMON_LIST
 
 
 def pargs() -> argparse.Namespace:
@@ -95,6 +94,7 @@ def process(args: argparse.Namespace) -> None:
 
             # 抽出したパラメータを辞書に保管する
             params = {}
+            params["filename"] = fnt_file.name
             for gn_info in GN_INFO_LIST:
                 params[gn_info] = mat_info.group(gn_info)
             for gn_common in GN_COMMON_LIST:
@@ -102,20 +102,20 @@ def process(args: argparse.Namespace) -> None:
             params_list.append(params)
 
     # ヘッダを出力する
-    len4loop = len(GN_LIST) - 1
-    for i, gn in enumerate(GN_LIST):
+    len4loop = len(params_list[0]) - 1
+    for i, gn in enumerate(params_list[0].keys()):
         print(f"| {gn} ", end="")
         if i == len4loop:
             print("|")
     # 幅寄せルールを出力する
-    for i, gn in enumerate(GN_LIST):
-        lcr = ":---" if i == 0 else "---:"
+    for i in range(len4loop + 1):
+        lcr = ":---" if i < 2 else "---:"
         print(f"| {lcr} ", end="")
         if i == len4loop:
             print("|")
     # パラメータを出力する
     for para in params_list:
-        for i, gn in enumerate(GN_LIST):
+        for i, gn in enumerate(para):
             print(f"| {para[gn]} ", end="")
             if i == len4loop:
                 print("|")
