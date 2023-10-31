@@ -6,17 +6,17 @@
 from __future__ import annotations
 
 import copy
+import hashlib
 import json
 import re
 import sys
+import tempfile
 from dataclasses import dataclass
-from typing import Any
+from pathlib import Path
 
 from BMFC import BMFC
 
 BMFCGEN_JSON_FILE = "bmfcgen.json"
-bmf_config: list = []
-args: Any = None
 
 
 @dataclass
@@ -51,13 +51,12 @@ def read_jsonc(file: str) -> dict:
     return json.loads(text)
 
 
-def init_config() -> None:
+def init_config() -> list[BmfGenConf]:
     TEMP_KEY = "template"
     CONFIG_KEY = "config"
 
     # 設定リスト
-    global bmf_config
-    bmf_config = []
+    bmf_config_list = []
 
     # JSON設定ファイルを読み込む
     jobj = read_jsonc(BMFCGEN_JSON_FILE)
@@ -78,22 +77,45 @@ def init_config() -> None:
             # 残りの設定を読み込む
             citem.apply_dict(cdict)
             # 設定リストに追加する
-            bmf_config.append(citem)
+            bmf_config_list.append(citem)
+
+    return bmf_config_list
 
 
-def generate_bmfc() -> None:
+def generate_bmfc(bmf_config_list: list[BmfGenConf]) -> None:
     print("bmfcファイルを生成中...", flush=True)
     count: int = 0
-    for conf in bmf_config:
+    for conf in bmf_config_list:
         count += 1
+        # ファイルが既存か調べる
+        bmfc_fp = Path(conf.bmfc_file)
+        if bmfc_fp.exists():
+            # 同一ファイルか調べる
+            with tempfile.SpooledTemporaryFile(100_000, "wb", encoding="utf-8") as temp_fp:
+                temp_fp.write(str(conf).encode())
+                # ファイルサイズチェック
+                temp_fp.seek(0, 2)
+                temp_fp_size = temp_fp.tell()
+                bmfc_fp_size = bmfc_fp.stat().st_size
+                if bmfc_fp_size == temp_fp_size:
+                    # ハッシュチェック
+                    temp_fp.seek(0)
+                    temp_hash = hashlib.file_digest(temp_fp, hashlib.sha1).hexdigest()
+                    with bmfc_fp.open("rb") as fp:
+                        bmfc_hash = hashlib.file_digest(fp, hashlib.sha1).hexdigest()
+                    if temp_hash == bmfc_hash:
+                        print(f"skip=> {conf.bmfc_file}", flush=True)
+                        continue
+        # 書き出し
         conf.save(conf.bmfc_file)
-        print("==>" + conf.bmfc_file, flush=True)
+        print(f"Gen==> {conf.bmfc_file}", flush=True)
+
     print(f"{count} ファイル生成完了", flush=True)
 
 
 def main() -> int:
-    init_config()
-    generate_bmfc()
+    bmf_config_list = init_config()
+    generate_bmfc(bmf_config_list)
     return 0
 
 
