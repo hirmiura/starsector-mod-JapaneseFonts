@@ -19,7 +19,8 @@ Debian(unstable) on WSL + Wine + Poetry + GNU make + ネット環境
 フォントの生成に、AngelCodeさんの [Bitmap Font Generator] を使用しているので、  
 Windows環境を前提としています。WSLからだとフォントファイルを指定しての生成が  
 出来なかったため、Wineを噛ませています。  
-[Bitmap Font Generator] と [BIZ UDPGothic] をダウンロードするため、ネット環境も必要です。
+[Bitmap Font Generator] と [BIZ UDGothic] / [BIZ UDPGothic] をダウンロードするため、  
+ネット環境も必要です。
 
 ### make
 
