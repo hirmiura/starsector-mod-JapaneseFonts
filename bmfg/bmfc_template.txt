@@ -2,11 +2,11 @@
 fileVersion=1
 
 # font settings
-fontName=BIZ UDPGothic
-fontFile=BIZUDPGothic-Regular.ttf
+fontName=
+fontFile=
 charSet=0
-fontSize=15
-aa=4
+fontSize=
+aa=1
 scaleH=100
 useSmoothing=1
 isBold=0
@@ -16,7 +16,7 @@ disableBoxChars=1
 outputInvalidCharGlyph=0
 dontIncludeKerningPairs=0
 useHinting=1
-renderFromOutline=1
+renderFromOutline=0
 useClearType=1
 autoFitNumPages=0
 autoFitFontSizeMin=0
