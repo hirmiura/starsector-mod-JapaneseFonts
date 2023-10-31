@@ -9,7 +9,7 @@ D_MOD		:= ../mod
 D_FONTSDST	:= $(D_MOD)/graphics/fonts
 
 # 実行ファイル
-E_BMFONT		:= $(D_BIN)/bmfont64.exe
+E_BMFONT		:= wine $(D_BIN)/bmfont64.exe
 E_FIXFACE		:= $(D_BIN)/fixface.py
 E_FIXHEIGHT		:= $(D_BIN)/fixheight.py
 
@@ -45,7 +45,7 @@ setup: .setup-bmfcgen
 #==============================================================================
 .PHONY: build build-fonts build-fonts-para copy-fonts fixheight
 build: ## ビルドする
-build: build-fonts copy-fonts fixheight
+build: setup build-fonts copy-fonts fixheight
 
 %.fnt: %.bmfc
 	$(E_BMFONT) -c $< -o $@
