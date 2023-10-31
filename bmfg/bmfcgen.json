@@ -5,83 +5,83 @@
         // Insignia
         {
             // insignia15LTaa.fnt
-            "outputfile": "BIZUDPGothic15aa",
-            "fontFile": "fonts/BIZUDPGothic-Regular.otf",
-            "fontSize": -15,
-            "aa": 4,
+            "fontName": "BIZ UDGothic",
+            "outputfile": "BIZUDGothic15aa",
+            "fontFile": "../fonts/BIZUDGothic-Regular.ttf",
+            "fontSize": -13,
             "outWidth": 4096,
             "outHeight": 2048
         },
         {
             // insignia21LTaa.fnt
-            "outputfile": "BIZUDPGothic21aa",
-            "fontFile": "fonts/BIZUDPGothic-Regular.otf",
-            "fontSize": -21,
-            "aa": 4,
+            "fontName": "BIZ UDGothic",
+            "outputfile": "BIZUDGothic21aa",
+            "fontFile": "../fonts/BIZUDGothic-Regular.ttf",
+            "fontSize": -17,
             "outWidth": 4096,
             "outHeight": 4096
         },
         {
             // insignia25LTaa.fnt
-            "outputfile": "BIZUDPGothic25aa",
-            "fontFile": "fonts/BIZUDPGothic-Regular.otf",
-            "fontSize": -25,
-            "aa": 4,
+            "fontName": "BIZ UDGothic",
+            "outputfile": "BIZUDGothic25aa",
+            "fontFile": "../fonts/BIZUDGothic-Regular.ttf",
+            "fontSize": -21,
             "outWidth": 4096,
             "outHeight": 4096
         },
         // Orbitron
         {
             // orbitron12condensed.fnt
+            "fontName": "BIZ UDPGothic",
             "outputfile": "BIZUDPGothic12cond",
-            "fontFile": "fonts/BIZUDPGothic-Regular.otf",
-            "fontSize": -12,
-            "aa": 4,
+            "fontFile": "../fonts/BIZUDPGothic-Regular.ttf",
+            "fontSize": -14,
             "outWidth": 2048,
             "outHeight": 2048
         },
         {
             // orbitron20aa.fnt
+            "fontName": "BIZ UDPGothic",
             "outputfile": "BIZUDPGothic20aa",
-            "fontFile": "fonts/BIZUDPGothic-Regular.otf",
-            "fontSize": 20,
-            "aa": 4,
+            "fontFile": "../fonts/BIZUDPGothic-Regular.ttf",
+            "fontSize": -16,
             "outWidth": 4096,
             "outHeight": 2048
         },
         {
             // orbitron20aabold.fnt
+            "fontName": "BIZ UDPGothic",
             "outputfile": "BIZUDPGothic20aab",
-            "fontFile": "fonts/BIZUDPGothic-Bold.otf",
-            "fontSize": 20,
-            "aa": 4,
+            "fontFile": "../fonts/BIZUDPGothic-Bold.ttf",
+            "fontSize": -16,
             "outWidth": 4096,
             "outHeight": 2048
         },
         {
             // orbitron20bold.fnt
+            "fontName": "BIZ UDPGothic",
             "outputfile": "BIZUDPGothic20b",
-            "fontFile": "fonts/BIZUDPGothic-Bold.otf",
-            "fontSize": 20,
-            "aa": 4,
+            "fontFile": "../fonts/BIZUDPGothic-Bold.ttf",
+            "fontSize": -16,
             "outWidth": 4096,
             "outHeight": 2048
         },
         {
             // orbitron24aa.fnt
+            "fontName": "BIZ UDPGothic",
             "outputfile": "BIZUDPGothic24aa",
-            "fontFile": "fonts/BIZUDPGothic-Regular.otf",
-            "fontSize": 24,
-            "aa": 4,
+            "fontFile": "../fonts/BIZUDPGothic-Regular.ttf",
+            "fontSize": -20,
             "outWidth": 4096,
             "outHeight": 2048
         },
         {
             // orbitron24aabold.fnt
+            "fontName": "BIZ UDPGothic",
             "outputfile": "BIZUDPGothic24aab",
-            "fontFile": "fonts/BIZUDPGothic-Bold.otf",
-            "fontSize": 24,
-            "aa": 4,
+            "fontFile": "../fonts/BIZUDPGothic-Bold.ttf",
+            "fontSize": -20,
             "outWidth": 4096,
             "outHeight": 2048
         }

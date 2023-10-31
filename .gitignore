@@ -161,6 +161,7 @@ cython_debug/
 
 # Repository specific
 /bin/bmfont64.exe
+/bin/bmfont.bmfc
 /bmfg/*
 !/bmfg/bmfc_template.txt
 !/bmfg/bmfcgen.json

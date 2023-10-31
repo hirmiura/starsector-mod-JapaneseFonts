@@ -1,7 +1,8 @@
 # starsector-mod-JapaneseFonts
 
 これは [Starsector] で日本語を表示するための、フォント差し替え Mod です。  
-現在は、森澤の [BIZ UDPGothic] を使用して一部のフォントのみ置き換えています。
+現在は、森澤の [BIZ UDGothic] と [BIZ UDPGothic] を使用して一部のフォントのみ  
+置き換えています。
 
 ## 注意
 
@@ -13,11 +14,13 @@
 
 ### 開発環境
 
-Debian(unstable) on WSL + Poetry + GNU make + ネット環境
+Debian(unstable) on WSL + Wine + Poetry + GNU make + ネット環境
 
 フォントの生成に、AngelCodeさんの [Bitmap Font Generator] を使用しているので、  
-Windows環境を前提としています。Wine等で動くかは試していないので分かりません。  
-[Bitmap Font Generator] と [BIZ UDPGothic] をダウンロードするため、ネット環境も必要です。
+Windows環境を前提としています。WSLからだとフォントファイルを指定しての生成が  
+出来なかったため、Wineを噛ませています。  
+[Bitmap Font Generator] と [BIZ UDGothic] / [BIZ UDPGothic] をダウンロードするため、  
+ネット環境も必要です。
 
 ### make
 
@@ -39,6 +42,7 @@ Windows環境を前提としています。Wine等で動くかは試していな
 ---
 
 [starsector]: https://fractalsoftworks.com/
+[biz udgothic]: https://fonts.google.com/specimen/BIZ+UDGothic
 [biz udpgothic]: https://fonts.google.com/specimen/BIZ+UDPGothic
 [SIL Open Font License (OFL)]: https://scripts.sil.org/ofl
 [MIT License]: https://opensource.org/license/mit/
