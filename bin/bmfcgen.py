@@ -10,13 +10,11 @@ import json
 import re
 import sys
 from dataclasses import dataclass
-from typing import Any
 
 from BMFC import BMFC
 
 BMFCGEN_JSON_FILE = "bmfcgen.json"
 bmf_config: list = []
-args: Any = None
 
 
 @dataclass
