@@ -5,27 +5,27 @@
         // Insignia
         {
             // insignia15LTaa.fnt
-            "fontName": "BIZ UDPGothic",
-            "outputfile": "BIZUDPGothic15aa",
-            "fontFile": "../fonts/BIZUDPGothic-Regular.ttf",
+            "fontName": "BIZ UDGothic",
+            "outputfile": "BIZUDGothic15aa",
+            "fontFile": "../fonts/BIZUDGothic-Regular.ttf",
             "fontSize": -13,
             "outWidth": 4096,
             "outHeight": 2048
         },
         {
             // insignia21LTaa.fnt
-            "fontName": "BIZ UDPGothic",
-            "outputfile": "BIZUDPGothic21aa",
-            "fontFile": "../fonts/BIZUDPGothic-Regular.ttf",
+            "fontName": "BIZ UDGothic",
+            "outputfile": "BIZUDGothic21aa",
+            "fontFile": "../fonts/BIZUDGothic-Regular.ttf",
             "fontSize": -17,
             "outWidth": 4096,
             "outHeight": 4096
         },
         {
             // insignia25LTaa.fnt
-            "fontName": "BIZ UDPGothic",
-            "outputfile": "BIZUDPGothic25aa",
-            "fontFile": "../fonts/BIZUDPGothic-Regular.ttf",
+            "fontName": "BIZ UDGothic",
+            "outputfile": "BIZUDGothic25aa",
+            "fontFile": "../fonts/BIZUDGothic-Regular.ttf",
             "fontSize": -21,
             "outWidth": 4096,
             "outHeight": 4096

@@ -14,9 +14,12 @@ E_FIXFACE		:= $(D_BIN)/fixface.py
 E_FIXHEIGHT		:= $(D_BIN)/fixheight.py
 
 # 生成するフォント
-FONTNAME := BIZUDPGothic
-FONT_LIST := 12cond.fnt 20aa.fnt 20aab.fnt 20b.fnt 24aa.fnt 24aab.fnt 15aa.fnt 21aa.fnt 25aa.fnt
-FONTS := $(addprefix $(FONTNAME),$(FONT_LIST))
+FONTNAME_INSIG := BIZUDGothic
+FONTNAME_ORBIT := BIZUDPGothic
+FONT_LIST_INSIG := 15aa.fnt 21aa.fnt 25aa.fnt
+FONT_LIST_ORBIT := 12cond.fnt 20aa.fnt 20aab.fnt 20b.fnt 24aa.fnt 24aab.fnt
+FONTS_INSIG := $(addprefix $(FONTNAME_INSIG),$(FONT_LIST_INSIG))
+FONTS_ORBIT := $(addprefix $(FONTNAME_ORBIT),$(FONT_LIST_ORBIT))
 
 
 #==============================================================================
@@ -54,20 +57,20 @@ build: setup build-fonts copy-fonts fixheight
 build-fonts:
 	$(MAKE) -j 4 build-fonts-para
 
-build-fonts-para: $(FONTS)
+build-fonts-para: $(FONTS_INSIG) $(FONTS_ORBIT)
 
-copy-fonts: $(FONTS) clean-mod-fonts
+copy-fonts: $(FONTS_INSIG) $(FONTS_ORBIT) clean-mod-fonts
 	@echo -e '$(CC_BrBlue)========== copy-fonts ==========$(CC_Reset)'
 	@mkdir -p $(D_FONTSDST)
-	cp $(FONTNAME)15aa.fnt $(D_FONTSDST)/insignia15LTaa.fnt
-	cp $(FONTNAME)21aa.fnt $(D_FONTSDST)/insignia21LTaa.fnt
-	cp $(FONTNAME)25aa.fnt $(D_FONTSDST)/insignia25LTaa.fnt
-	cp $(FONTNAME)12cond.fnt $(D_FONTSDST)/orbitron12condensed.fnt
-	cp $(FONTNAME)20aa.fnt $(D_FONTSDST)/orbitron20aa.fnt
-	cp $(FONTNAME)20aab.fnt $(D_FONTSDST)/orbitron20aabold.fnt
-	cp $(FONTNAME)20b.fnt $(D_FONTSDST)/orbitron20bold.fnt
-	cp $(FONTNAME)24aa.fnt $(D_FONTSDST)/orbitron24aa.fnt
-	cp $(FONTNAME)24aab.fnt $(D_FONTSDST)/orbitron24aabold.fnt
+	cp $(FONTNAME_INSIG)15aa.fnt $(D_FONTSDST)/insignia15LTaa.fnt
+	cp $(FONTNAME_INSIG)21aa.fnt $(D_FONTSDST)/insignia21LTaa.fnt
+	cp $(FONTNAME_INSIG)25aa.fnt $(D_FONTSDST)/insignia25LTaa.fnt
+	cp $(FONTNAME_ORBIT)12cond.fnt $(D_FONTSDST)/orbitron12condensed.fnt
+	cp $(FONTNAME_ORBIT)20aa.fnt $(D_FONTSDST)/orbitron20aa.fnt
+	cp $(FONTNAME_ORBIT)20aab.fnt $(D_FONTSDST)/orbitron20aabold.fnt
+	cp $(FONTNAME_ORBIT)20b.fnt $(D_FONTSDST)/orbitron20bold.fnt
+	cp $(FONTNAME_ORBIT)24aa.fnt $(D_FONTSDST)/orbitron24aa.fnt
+	cp $(FONTNAME_ORBIT)24aab.fnt $(D_FONTSDST)/orbitron24aabold.fnt
 	cp *.png $(D_FONTSDST)
 
 fixheight:
