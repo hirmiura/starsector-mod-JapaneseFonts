@@ -14,7 +14,6 @@ from dataclasses import dataclass
 from BMFC import BMFC
 
 BMFCGEN_JSON_FILE = "bmfcgen.json"
-bmf_config: list = []
 
 
 @dataclass
@@ -49,13 +48,12 @@ def read_jsonc(file: str) -> dict:
     return json.loads(text)
 
 
-def init_config() -> None:
+def init_config() -> list:
     TEMP_KEY = "template"
     CONFIG_KEY = "config"
 
     # 設定リスト
-    global bmf_config
-    bmf_config = []
+    bmf_config_list = []
 
     # JSON設定ファイルを読み込む
     jobj = read_jsonc(BMFCGEN_JSON_FILE)
@@ -76,13 +74,15 @@ def init_config() -> None:
             # 残りの設定を読み込む
             citem.apply_dict(cdict)
             # 設定リストに追加する
-            bmf_config.append(citem)
+            bmf_config_list.append(citem)
+
+    return bmf_config_list
 
 
-def generate_bmfc() -> None:
+def generate_bmfc(bmf_config_list: list) -> None:
     print("bmfcファイルを生成中...", flush=True)
     count: int = 0
-    for conf in bmf_config:
+    for conf in bmf_config_list:
         count += 1
         conf.save(conf.bmfc_file)
         print("==>" + conf.bmfc_file, flush=True)
@@ -90,8 +90,8 @@ def generate_bmfc() -> None:
 
 
 def main() -> int:
-    init_config()
-    generate_bmfc()
+    bmf_config_list = init_config()
+    generate_bmfc(bmf_config_list)
     return 0
 
 
