@@ -13,6 +13,9 @@ D_FONTS		:= fonts
 D_MOD		:= mod
 D_ID		:= $(shell jq -r '.id' $(D_MOD)/mod_info.json)
 
+# URL
+URL_BMFG	:= https://www.angelcode.com/products/bmfont/bmfont64_1.14b_beta.zip
+URL_FONT	:= https://raw.githubusercontent.com/googlefonts/morisawa-biz-ud-gothic/main/fonts/ttf
 
 #==============================================================================
 # カラーコード
@@ -32,15 +35,17 @@ setup: setup-bfg setup-fonts setup-bmfg
 setup-bfg:
 	@echo -e '$(CC_BrBlue)========== setup-bfg ==========$(CC_Reset)'
 	@mkdir -p $(D_TMP)
-	wget -nc -P $(D_TMP) https://www.angelcode.com/products/bmfont/bmfont64_1.14b_beta.zip
+	wget -nc -P $(D_TMP) $(URL_BMFG)
 	unzip -n $(D_TMP)/bmfont64_1.14b_beta.zip -d $(D_BIN)
 	chmod 755 $(D_BIN)/bmfont64.exe
 
 setup-fonts:
 	@echo -e '$(CC_BrBlue)========== setup-fonts ==========$(CC_Reset)'
 	@mkdir -p $(D_FONTS)
-	wget -nc -P $(D_FONTS) https://github.com/google/fonts/blob/main/ofl/bizudpgothic/BIZUDPGothic-Regular.ttf
-	wget -nc -P $(D_FONTS) https://github.com/google/fonts/blob/main/ofl/bizudpgothic/BIZUDPGothic-Bold.ttf
+	wget -nc -P $(D_FONTS) $(URL_FONT)/BIZUDGothic-Regular.ttf
+	wget -nc -P $(D_FONTS) $(URL_FONT)/BIZUDGothic-Bold.ttf
+	wget -nc -P $(D_FONTS) $(URL_FONT)/BIZUDPGothic-Regular.ttf
+	wget -nc -P $(D_FONTS) $(URL_FONT)/BIZUDPGothic-Bold.ttf
 
 setup-bmfg:
 	@echo -e '$(CC_BrBlue)========== setup-bmfg ==========$(CC_Reset)'
