@@ -204,7 +204,6 @@ class BMFC:
         tli.append(
             f"""\
 # AngelCode Bitmap Font Generator configuration file
-
 fileVersion={self.fileVersion}
 
 # font settings
@@ -301,7 +300,6 @@ outlineThickness={self.outlineThickness}
 def test():
     obj = BMFC.load("test.bmfc")
     print(obj)
-    pass
 
 
 if __name__ == "__main__":
