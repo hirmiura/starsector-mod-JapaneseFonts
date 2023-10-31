@@ -95,7 +95,7 @@ clean: clean-package
 	$(MAKE) -C bmfg clean
 
 clean-all: ## 生成した全てのファイルを削除します
-clean-all: clean clean-fonts clean-tmp
+clean-all: clean clean-fonts clean-tmp clean-exe
 	$(MAKE) -C bmfg clean-all
 
 clean-fonts:
@@ -105,6 +105,10 @@ clean-fonts:
 clean-tmp:
 	@echo -e '$(CC_BrMagenta)========== clean-tmp ==========$(CC_Reset)'
 	rm -fr $(D_TMP)
+
+clean-exe:
+	@echo -e '$(CC_BrMagenta)========== clean-exe ==========$(CC_Reset)'
+	rm -f $(D_BIN)/bmfont64.exe
 
 clean-package:
 	@echo -e '$(CC_BrMagenta)========== clean-package ==========$(CC_Reset)'
