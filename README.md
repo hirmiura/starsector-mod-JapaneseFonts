@@ -26,6 +26,10 @@ Windows環境を前提としています。WSLからだとフォントファイ�
 
 `make all` でいけると思います。
 
+## Wiki
+
+雑多な情報は[こちら](https://github.com/hirmiura/starsector-mod-JapaneseFonts/wiki)です。
+
 ## ライセンス
 
 生成されたフォントは、オリジナルから [SIL Open Font License (OFL)] を引き継いでいます。  
