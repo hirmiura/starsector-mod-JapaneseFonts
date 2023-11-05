@@ -23,8 +23,8 @@
             "outputfile": "BIZUDGothic21aa",
             "fontFile": "../fonts/BIZUDGothic-Regular.ttf",
             "fontSize": -17,
-            "outWidth": 4096,
-            "outHeight": 4096
+            "outWidth": 2048,
+            "outHeight": 2048
         },
         {
             // insignia25LTaa.fnt
@@ -33,7 +33,7 @@
             "fontFile": "../fonts/BIZUDGothic-Regular.ttf",
             "fontSize": -21,
             "outWidth": 4096,
-            "outHeight": 4096
+            "outHeight": 2048
         },
         // Orbitron
         {
@@ -51,7 +51,7 @@
             "outputfile": "BIZUDPGothic20aa",
             "fontFile": "../fonts/BIZUDPGothic-Regular.ttf",
             "fontSize": -16,
-            "outWidth": 4096,
+            "outWidth": 2048,
             "outHeight": 2048
         },
         {
@@ -60,7 +60,7 @@
             "outputfile": "BIZUDPGothic20aab",
             "fontFile": "../fonts/BIZUDPGothic-Bold.ttf",
             "fontSize": -16,
-            "outWidth": 4096,
+            "outWidth": 2048,
             "outHeight": 2048
         },
         {
@@ -69,7 +69,7 @@
             "outputfile": "BIZUDPGothic20b",
             "fontFile": "../fonts/BIZUDPGothic-Bold.ttf",
             "fontSize": -16,
-            "outWidth": 4096,
+            "outWidth": 2048,
             "outHeight": 2048
         },
         {
