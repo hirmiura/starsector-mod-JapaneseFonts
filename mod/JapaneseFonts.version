@@ -4,8 +4,8 @@
     "modVersion": {
         "major": 0,
         "minor": 2,
-        "patch": 3
+        "patch": 4
     },
-    "directDownloadURL": "https://github.com/hirmiura/starsector-mod-JapaneseFonts/releases/download/v0.2.3/JapaneseFonts-0.2.3.zip",
+    "directDownloadURL": "https://github.com/hirmiura/starsector-mod-JapaneseFonts/releases/download/v0.2.4/JapaneseFonts-0.2.4.zip",
     "changelogURL": "https://raw.githubusercontent.com/hirmiura/starsector-mod-JapaneseFonts/main/mod/JapaneseFonts.changelog"
 }
