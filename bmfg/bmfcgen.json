@@ -7,9 +7,14 @@
             // insignia15LTaa.fnt
             "fontName": "BIZ UDGothic",
             "outputfile": "BIZUDGothic15aa",
-            "fontFile": "../fonts/BIZUDGothic-Regular.ttf",
-            "fontSize": -13,
-            "outWidth": 4096,
+            "fontFile": "../fonts/BIZUDGothic-Bold.ttf",
+            "fontSize": 13,
+            "aa": 1,
+            "useSmoothing": 1,
+            "useHinting": 1,
+            "renderFromOutline": 1,
+            "useClearType": 0,
+            "outWidth": 2048,
             "outHeight": 2048
         },
         {
