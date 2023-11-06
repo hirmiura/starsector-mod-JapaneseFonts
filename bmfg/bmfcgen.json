@@ -89,6 +89,27 @@
             "fontSize": -20,
             "outWidth": 4096,
             "outHeight": 2048
+        },
+        // Victor
+        {
+            // victor10.fnt
+            "fontName": "BIZ UDPGothic",
+            "outputfile": "BIZUDPGothic10",
+            "fontFile": "../fonts/BIZUDPGothic-Regular.ttf",
+            "fontSize": -10,
+            "useSmoothing": 0,
+            "outWidth": 2048,
+            "outHeight": 1024
+        },
+        {
+            // victor14.fnt
+            "fontName": "BIZ UDPGothic",
+            "outputfile": "BIZUDPGothic14",
+            "fontFile": "../fonts/BIZUDPGothic-Regular.ttf",
+            "fontSize": -14,
+            "useSmoothing": 0,
+            "outWidth": 2048,
+            "outHeight": 2048
         }
     ]
 }

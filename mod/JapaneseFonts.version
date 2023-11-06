@@ -3,9 +3,9 @@
     "modName": "zja Japanese Fonts",
     "modVersion": {
         "major": 0,
-        "minor": 2,
-        "patch": 4
+        "minor": 3,
+        "patch": 0
     },
-    "directDownloadURL": "https://github.com/hirmiura/starsector-mod-JapaneseFonts/releases/download/v0.2.4/JapaneseFonts-0.2.4.zip",
+    "directDownloadURL": "https://github.com/hirmiura/starsector-mod-JapaneseFonts/releases/download/v0.3.0/JapaneseFonts-0.3.0.zip",
     "changelogURL": "https://raw.githubusercontent.com/hirmiura/starsector-mod-JapaneseFonts/main/mod/JapaneseFonts.changelog"
 }
