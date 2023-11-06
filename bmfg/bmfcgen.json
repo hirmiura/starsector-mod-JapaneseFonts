@@ -93,21 +93,19 @@
         // Victor
         {
             // victor10.fnt
-            "fontName": "BIZ UDPGothic",
-            "outputfile": "BIZUDPGothic10",
-            "fontFile": "../fonts/BIZUDPGothic-Regular.ttf",
+            "fontName": "BIZ UDGothic",
+            "outputfile": "BIZUDGothic10",
+            "fontFile": "../fonts/BIZUDGothic-Regular.ttf",
             "fontSize": -10,
-            "useSmoothing": 0,
             "outWidth": 2048,
             "outHeight": 1024
         },
         {
             // victor14.fnt
-            "fontName": "BIZ UDPGothic",
-            "outputfile": "BIZUDPGothic14",
-            "fontFile": "../fonts/BIZUDPGothic-Regular.ttf",
-            "fontSize": -14,
-            "useSmoothing": 0,
+            "fontName": "BIZ UDGothic",
+            "outputfile": "BIZUDGothic14",
+            "fontFile": "../fonts/BIZUDGothic-Regular.ttf",
+            "fontSize": -13,
             "outWidth": 2048,
             "outHeight": 2048
         }
