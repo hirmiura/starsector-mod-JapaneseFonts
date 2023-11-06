@@ -16,7 +16,7 @@ E_FIXHEIGHT		:= $(D_BIN)/fixheight.py
 # 生成するフォント
 FONTNAME_INSIG  := BIZUDGothic
 FONTNAME_ORBIT  := BIZUDPGothic
-FONTNAME_VICTOR := BIZUDPGothic
+FONTNAME_VICTOR := BIZUDGothic
 FONT_LIST_INSIG  := 15aa.fnt 21aa.fnt 25aa.fnt
 FONT_LIST_ORBIT  := 12cond.fnt 20aa.fnt 20aab.fnt 20b.fnt 24aa.fnt 24aab.fnt
 FONT_LIST_VICTOR := 10.fnt 14.fnt
